@@ -18,7 +18,7 @@ img[src="cake.png"]{
 body{
     width: 90%;
     margin: 0 auto;
-    font-family: 'Quicksand','Staatliches', sans-serif;
+    font-family: 'Quicksand' 'Staatliches' sans-serif;
     color: black;
 }
 
