@@ -22,8 +22,7 @@ nav{
     background-color: white;
     display: flex;
     margin-bottom: 10px;
-    color: black;
-    border: 2px solid #333;
+    color: black;;
 }
 
 nav ul{
@@ -62,6 +61,7 @@ nav form{
 nav, footer{
     background-color: white;
     padding: 1%;
+    border: 1px solid #333
 }
 
 img[src="cake.png"]{
@@ -153,5 +153,4 @@ legend{
 footer{
     margin-top: 10px;
     background-color: white;
-    border: 2px solid #333;
 }
