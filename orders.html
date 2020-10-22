@@ -2,29 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="">
+    <meta name="author" content="Spencer Beaver & Nysa Clark">
     <meta name="description" content="">
 
     <meta property="og:image" content="">
     <meta property="og:title" content="">
     <meta property="og:description" content="">
 
-    <title>Johnson Bakery Orders</title>
+    <title>Johnson's Bakery Orders</title>
     <link rel="stylesheet" href="orders.css">
     <link rel="shortcut icon" href="cake.png" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <img src="cake.png" alt="cake logo">
-    </header>
-
     <nav>
+        <img src="cake.png" alt="cake logo">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="orders.html">Orders</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="orders.html">Orders</a></li>
         </ul>
         <form>
             <input type="search" name="query" placeholder="Search...">
@@ -35,7 +32,7 @@
     <main>
         <form action="data.json" method="POST">
             <div class="cake-field">
-                <h3>Cake</h3>
+                <h3 class="cakeHeader">Cake</h3>
                 <fieldset>
                     <legend>Flavor</legend>
                     <ul>
@@ -156,49 +153,49 @@
                         <li>
                             <label for="cake.6round">
                                 <input type="radio" id="" name="">
-                                Six Inch Round
+                                6" Round
                             </label>
                         </li>
                         <li>
                             <label for="cake.8round">
                                 <input type="radio" id="" name="">
-                                Eight Inch Round
+                                8" Round
                             </label>
                         </li>
                         <li>
                             <label for="cake.9round">
                                 <input type="radio" id="" name="">
-                                Nine Inch Round
+                                9" Round
                             </label>
                         </li>
                         <li>
                             <label for="cake.10round">
                                 <input type="radio" id="" name="">
-                                Ten Inch Round
+                                10" Round
                             </label>
                         </li>
                         <li>
                             <label for="cake.6and8">
                                 <input type="radio" id="" name="">
-                                Six and Eight Inch Tiered
+                                6" / 8" Tier
                             </label>
                         </li>
                         <li>
                             <label for="cake.6and9">
                                 <input type="radio" id="" name="">
-                                Six and Nine Inch Tiered
+                                6" / 9" Tier
                             </label>
                         </li>
                         <li>
                             <label for="cake.8and10">
                                 <input type="radio" id="" name="">
-                                Eight and Ten Inch Tiered
+                                8" / 10" Tier
                             </label>
                         </li>
                         <li>
                             <label for="cake.6and8and10">
                                 <input type="radio" id="" name="">
-                                Six, Eight, and Ten Inch Tiered
+                                6" / 8" / 10" Tier
                             </label>
                         </li>
                     </ul>
@@ -206,81 +203,81 @@
 
                 <fieldset>
                     <legend>Color</legend>
-                    <ul>
+                    <ul class="color">
                         <li>
-                            <label for="cake.lightBlue">
+                            <label for="cake.lightBlue" class="lightBlue">
                                 <input type="radio" id="" name="">
                                 Light Blue
                             </label>
                         </li>
                         <li>
-                            <label for="cake.darkBlue">
+                            <label for="cake.darkBlue" class="darkBlue">
                                 <input type="radio" id="" name="">
                                 Dark Blue
                             </label>
                         </li>
                         <li>
-                            <label for="cake.lightPink">
+                            <label for="cake.lightPink" class="lightPink">
                                 <input type="radio" id="" name="">
                                 Light Pink
                             </label>
                         </li>
                         <li>
-                            <label for="cake.deepPink">
+                            <label for="cake.deepPink" class="deepPink">
                                 <input type="radio" id="" name="">
                                 Deep Pink
                             </label>
                         </li>
                         <li>
-                            <label for="cake.purple">
+                            <label for="cake.purple" class="purple">
                                 <input type="radio" id="" name="">
                                 Purple
                             </label>
                         </li>
                         <li>
-                            <label for="cake.green">
+                            <label for="cake.green" class="green">
                                 <input type="radio" id="" name="">
                                 Green
                             </label>
                         </li>
                         <li>
-                            <label for="cake.red">
+                            <label for="cake.red" class="red">
                                 <input type="radio" id="" name="">
                                 Red
                             </label>
                         </li>
                         <li>
-                            <label for="cake.orange">
+                            <label for="cake.orange" class="orange">
                                 <input type="radio" id="" name="">
                                 Orange
                             </label>
                         </li>
                         <li>
-                            <label for="cake.yellow">
+                            <label for="cake.yellow" class="yellow">
                                 <input type="radio" id="" name="">
                                 Yellow
                             </label>
                         </li>
                         <li>
-                            <label for="cake.black">
+                            <label for="cake.black" class="black">
                                 <input type="radio" id="" name="">
                                 Black
                             </label>
                         </li>
                         <li>
-                            <label for="cake.gray">
+                            <label for="cake.gray" class="gray">
                                 <input type="radio" id="" name="">
                                 Gray
                             </label>
                         </li>
                         <li>
-                            <label for="cake.brown">
+                            <label for="cake.brown" class="brown">
                                 <input type="radio" id="" name="">
                                 Brown
                             </label>
                         </li>
                         <li>
-                            <label for="cake.white">
+                            <label for="cake.white" class="white">
                                 <input type="radio" id="" name="">
                                 White
                             </label>
@@ -376,7 +373,8 @@
     </main>
 
     <footer>
-        (c) Copyright 2020 Johnson's Bakery - All Rights Reserved.
+        <p>(c) Copyright 2020 Johnson's Bakery - All Rights Reserved.</p>
+        <!-- Add credits and contact info-->
     </footer>
 </body>
 </html>
