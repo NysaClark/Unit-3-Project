@@ -1,3 +1,46 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 70%;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+header img{
+    order: 0;
+}
+
+header nav{
+    order: 1;
+    list-style: none;
+    display: inline;
+}
+
+header form{
+    order: 2;
+}
+
+main{
+    display: flex;
+}
+
+footer{
+    margin-top: 10px;
+}
+
 html{
     font-size: 10px;
     background-color: #fffdef;
