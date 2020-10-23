@@ -90,6 +90,52 @@ input[type="submit"]{
     color: white;
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "weDo price special"
+    ;
+}
+
+.weDo{
+    grid-area: weDo;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+.weDo article{
+    padding-bottom: 5px;
+}
+
+.price{
+    grid-column: 2 / -2;
+    grid-area: price;
+    padding-right: 35px;
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+}
+
+.price ul{
+    columns: 2;
+    list-style-type: none;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.special{
+    grid-area: special;
+    grid-column: -2 / -1;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+section{
+    font-size: 2rem;
+}
 footer{
     margin-top: 10px;
     background-color: white;
