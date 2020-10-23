@@ -90,13 +90,13 @@ input[type="submit"]{
     color: white;
 }
 header{
-    font-weight: 4rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 .item{
     height: auto;
@@ -153,12 +153,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
-}
-
-.price{
     list-style-type: none;
     text-align: center;
 }
+
 .title{
     font-size: 2rem;
 }
