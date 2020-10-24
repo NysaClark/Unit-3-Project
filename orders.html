@@ -11,12 +11,12 @@
 
     <title>Johnson's Bakery Orders</title>
     <link rel="stylesheet" href="orders.css">
-    <link rel="shortcut icon" href="cake.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/cake.png" type="image/x-icon">
 </head>
 
 <body>
     <nav>
-        <img src="cake.png" alt="cake logo">
+        <img src="images/cake.png" alt="cake logo">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -25,15 +25,44 @@
         </ul>
         <form>
             <input type="search" name="query" placeholder="Search...">
-            <input type="submit" value="Search">
+            <input type="submit" value="Search" class="navSubmit">
         </form>
     </nav>
 
     <main>
         <form action="data.json" method="POST">
+            <!-- User Info -->
+                <fieldset class="userInfo">
+                    <legend><h3>User Information</h3></legend>
+                    <ul>
+                        <li>
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="user.address" required> 
+                        </li>
+                        <li>
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="user.phone">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="user.email">
+                        </li>
+                        <li>
+                            <label for="cardNum">Card Number</label>
+                            <input type="text" id="cardNum" name="user.cardNum" placeholder="xxxx xxxx xxxx xxxx" required>
+                        </li>
+                        <li>
+                            <label for="cardSecurity">Card Security Code</label>
+                            <input type="password" id="cardSecurity" name="user.cardSecurity" required>
+                        </li>
+                    </ul>
+                </fieldset>
+
+
+            <!-- Cakes -->
+            <h3 class="cakeHeader">Cakes</h3>
             <div class="cake-field">
-                <h3 class="cakeHeader">Cakes</h3>
-                <fieldset>
+                <fieldset class="cakeFlavors item">
                     <legend>Flavors</legend>
                     <ul>
                         <li>
@@ -105,7 +134,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakeFillings item">
                     <legend>Fillings</legend>
                     <ul>
                         <li>
@@ -147,7 +176,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakeSizes item">
                     <legend>Sizes</legend>
                     <ul>
                         <li>
@@ -201,7 +230,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakeColors item">
                     <legend>Colors</legend>
                     <ul class="color">
                         <li>
@@ -285,7 +314,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakeToppings item">
                     <legend>Toppings</legend>
                     <ul>
                         <li>
@@ -321,7 +350,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakeMisc item">
                     <legend>Misc.</legend>
                     <ul>
                         <li>
@@ -334,14 +363,15 @@
                         </li>
                     </ul>
                 </fieldset>
+                <p class="cakeImage"><img src="images/cakeOrders.jpg"></p>
             </div>
 
 
-
+            <!-- Cupcakes -->
+            <h3 class="cupcakeHeader">Cupcakes</h3>
             <div class="cupcake-field">
-                <h3 class="cupcakeHeader">Cupcakes</h3>
-                <fieldset>
-                    <legend>Flavor</legend>
+                <fieldset class="cupcakeFlavors item">
+                    <legend>Flavors</legend>
                     <ul>
                         <li>
                             <label for="cupcake.vanilla">
@@ -412,38 +442,38 @@
                     </ul>
                 </fieldset>
                 
-                <fieldset>
+                <fieldset class="cupcakeSizes item">
                     <legend>Sizes</legend>
                     <ul>
                         <li>
                             <label for="cupcake.6">
                                 <input type="radio" id="cupcake.6" name="cupcake.6">
-                                Six
+                                6 cupcakes
                             </label>
                         </li>
                         <li>
                             <label for="cupcake.12">
                                 <input type="radio" id="cupcake.12" name="cupcake.12">
-                                Twelve
+                                12 cupcakes
                             </label>
                         </li>
                         <li>
                             <label for="cupcake.18">
                                 <input type="radio" id="cupcake.18" name="cupcake.18">
-                                Eighteen
+                                18 cupcakes
                             </label>
                         </li>
                         <li>
                             <label for="cupcake.24">
                                 <input type="radio" id="cupcake.24" name="cupcake.24">
-                                Twenty-four
+                                24 cupcakes
                             </label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Color</legend>
+                <fieldset class="cupcakeColors item">
+                    <legend>Colors</legend>
                     <ul class="color">
                         <li>
                             <label for="cupcake.lightBlue" class="lightBlue">
@@ -526,7 +556,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cupcakeToppings item">
                     <legend>Toppings</legend>
                     <ul>
                         <li>
@@ -562,22 +592,23 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cupcakeMisc item">
                     <legend>Misc.</legend>
                     <ul>
                         <li>
-                            <label for="cupcake.specReq">Additional Requests or Comments</label>
-                            <input type="textarea" id="specReq" name="specReq">
+                            <label for="cupcake.specReq">Additional Requests or Instructions</label>
+                            <textarea name="cupcake.specReq" id="cupcake.specReq"></textarea>
                         </li>
                     </ul>
                 </fieldset>
+                <p class="cupcakeImage"><img src="images/cupcakeOrders.jpeg"></p>
             </div>
 
 
-
+            <!-- Cake Pops -->
+            <h3 class="cakepopHeader">Cake Pops</h3>
             <div class="cakepop-field">
-                <h3 class="cakepopHeader">Cake Pops</h3>
-                <fieldset>
+                <fieldset class="cakepopFlavors item">
                     <legend>Flavors</legend>
                     <ul>
                         <li>
@@ -649,7 +680,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakepopFillings item">
                     <legend>Fillings</legend>
                     <ul>
                         <li>
@@ -679,37 +710,37 @@
                     </ul>
                 </fieldset> 
 
-                <fieldset>
+                <fieldset class="cakepopSizes item">
                     <legend>Sizes</legend>
                     <ul>
                         <li>
                             <label for="cakepop.6">
                                 <input type="radio" id="cakepop.6" name="cakepop.6">
-                                Six
+                                6 cake pops
                             </label>
                         </li>
                         <li>
                             <label for="cakepop.12">
                                 <input type="radio" id="cakepop.12" name="cakepop.12">
-                                Twelve
+                                12 cake pops
                             </label>
                         </li>
                         <li>
                             <label for="cakepop.18">
                                 <input type="radio" id="cakepop.18" name="cakepop.18">
-                                Eighteen
+                                18 cake pops
                             </label>
                         </li>
                         <li>
                             <label for="cakepop.24">
                                 <input type="radio" id="cakepop.24" name="cakepop.24">
-                                Twenty-four
+                                24 cake pops
                             </label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakepopColors item">
                     <legend>Colors</legend>
                     <ul class="color">
                         <li>
@@ -793,7 +824,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakepopToppings item">
                     <legend>Toppings</legend>
                     <ul>
                         <li>
@@ -829,7 +860,7 @@
                     </ul>
                 </fieldset>
 
-                <fieldset>
+                <fieldset class="cakepopMisc item">
                     <legend>Misc.</legend>
                     <ul>
                         <li>
@@ -838,39 +869,15 @@
                         </li>
                     </ul>
                 </fieldset>
+                <p class="cakepopImage"><img src="images/cakepopOrders.jpeg"></p>
             </div>
-
-            <fieldset>
-                <legend>User Information</legend>
-                <ul>
-                    <li>
-                        <label for="address">Address</label>
-                        <input type="text" id="address" name="user.address" required> 
-                    </li>
-                    <li>
-                        <label for="phone">Phone Number</label>
-                        <input type="text" id="phone" name="user.phone">
-                    </li>
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="user.email">
-                    </li>
-                    <li>
-                        <label for="cardNum">Card Number</label>
-                        <input type="text" id="cardNum" name="user.cardNum" placeholder="xxxx xxxx xxxx xxxx" required>
-                    </li>
-                    <li>
-                        <label for="cardSecurity">Card Security Code</label>
-                        <input type="password" id="cardSecurity" name="user.cardSecurity" required>
-                    </li>
-                </ul>
-            </fieldset>
+            <input type="submit" value="Submit" class="formSubmit">
         </form>
     </main>
 
     <footer>
-        <p>(c) Copyright 2020 Johnson's Bakery - All Rights Reserved.</p>
-        <!-- Add credits and contact info-->
+        <p class="contact">For more information call us at 602-453-5342 or email us at johnsonbakery@gmail.com</p>
+        <p class="copyright">(c) Copyright 2020 Johnson's Bakery - All Rights Reserved. Background By Matt Lipman</p>
     </footer>
 </body>
 </html>

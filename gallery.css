@@ -10,7 +10,7 @@ html, body{
     padding: 0;
 }
 
-img[src="cake.png"]{
+img[src="images/cake.png"]{
     width: 50px;
     height: auto;
 }
@@ -90,11 +90,6 @@ input[type="submit"]{
     color: white;
 }
 
-footer{
-    margin-top: 10px;
-    background-color: white;;
-}
-
 main{
     
 }
@@ -125,4 +120,16 @@ iframe{
 
 .pinkCakepop{
     
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.contact{
+    font-weight: bold;
+}
+.copyright{
+    font-size: 1.3rem;
 }
