@@ -149,8 +149,10 @@ header{
 }
 
 .brownCupcake{
+    display: inline-grid;
     grid-column: 3/4;
     grid-row: 5 / 7;
+    justify-items: center;
 }
 
 img[src="cupcake.jpg"]{
