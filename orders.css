@@ -74,7 +74,7 @@ ul{
 }
 
 p, li{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 input[type="search"]{
@@ -100,12 +100,20 @@ h3{
 
 fieldset{
     background-color: white;
+    border: 5px dotted #fffdef;
+    border-radius: 15px;
+    width: 50%;
+    display: grid;
+    grid-gap
 }
 
 legend{
     font-size: 1.5rem;
 }
 
+fieldset ul{
+    columns: 2;
+}
 .color{
     font-weight: bold;
     text-transform: uppercase;
@@ -135,7 +143,7 @@ legend{
     color: orange;
 }
 .yellow{
-    color: yellow;
+    color: rgb(238, 234, 0);
 }
 .black{
     color: black;
