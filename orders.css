@@ -115,7 +115,7 @@ fieldset ul{
     margin-top: 0;
 }
 .userInfo{
-    border-bottom: 1px dotted #333;
+    border-bottom: 1px dotted lightpink;
     margin: 5px;
 }
 
@@ -135,7 +135,7 @@ legend{
     height: auto;
     width: calc(100% - 20px);
     justify-items: end;
-    border: 1px dotted #333;
+    border: 1px dotted lightpink;
     border-radius: 15px;
 }
 .cakeFlavors{
