@@ -90,32 +90,6 @@ p, li{
     font-size: 1.5rem;
 }
 
-.container{
-    text-align: center;
-    color: white;
-}
-
-.name{
-    position: absolute;
-    text-align: center;
-    top: 400px;
-    left:150px;
-    color: white;
-    font-size: 6rem;
-    text-transform: uppercase;
-}
-
-.slogan{
-    position: absolute;
-    text-align: center;
-    top: 550px;
-    left: 200px;
-    color: white;
-    font-size: 3rem;
-    text-transform: uppercase;
-    width: 500px;
-}
-
 footer{
     background-color: white;
     text-align: center;
